@@ -1,0 +1,43 @@
+@import "../../sass/abstract/_mixins";
+@import "../abstract/_variables";
+
+.add-page{
+    position: relative;
+    width:100vw;
+    background-image: linear-gradient(123deg, $lightGray 50%,$mediumGray);
+    @include flex-row-center
+}
+
+.add-container{
+    position: relative;
+    height: 100%;
+    width: 60% ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    & .input-wrapper{
+        margin:10rem 5rem 3rem 5rem;
+        width: 45%;
+        height: auto;
+        & .input-search{
+            color: rgb(240, 229, 229);
+            height: auto;
+            font-family: cursive;
+            padding: .4rem 2rem .4rem 2rem;
+            font-size: 2rem;
+            width:100%;
+            background-color: $darkBlue;
+            border-radius: .6rem;
+        }
+    }
+
+    & .movies-list{
+        height: auto;
+        width: 80%;
+        @include flex-column-center
+    }
+}   
+
+

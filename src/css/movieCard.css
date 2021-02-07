@@ -1,0 +1,116 @@
+.movie-card-container {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.movie-content {
+  height: inherit;
+  padding: 2rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.movie-content .movie-name {
+  color: #142d5e;
+  height: 4.4rem;
+  width: 100%;
+}
+
+.movie-content .movie-description {
+  font: 1.3em sans-serif;
+}
+
+.movie-content .buttons {
+  width: 100%;
+}
+
+.movie-content .buttons .movie-btn {
+  height: 3rem;
+  width: 45%;
+  background-color: #4ac24a;
+  margin: 0.5rem;
+  border-radius: 1.7rem;
+  border: none;
+  -webkit-box-shadow: 0.2px 0.8px 0.6px 0.7px #818181;
+          box-shadow: 0.2px 0.8px 0.6px 0.7px #818181;
+  outline: none;
+  font-size: 1.3rem;
+}
+
+.movie-content .buttons .movie-btn .fas {
+  color: #131212;
+}
+
+.movie-content .buttons .movie-btn .btn-title {
+  color: #142d5e;
+  margin-left: 1rem;
+  text-transform: uppercase;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+.movie-content .buttons .movie-btn:hover {
+  text-decoration: underline;
+}
+
+.movie-content .buttons .movie-btn:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+.movie-content .buttons .movie-btn .fas:active {
+  color: yellow;
+}
+
+.img-wrapper {
+  position: relative;
+  justify-self: center;
+  margin: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0rem 0.1rem 0.2rem 0.2rem #333333;
+          box-shadow: 0rem 0.1rem 0.2rem 0.2rem #333333;
+}
+
+.img-wrapper__poster {
+  margin: 0%;
+  padding: 0%;
+}
+
+.img-wrapper__noposter {
+  font-weight: bold;
+  font-size: 3rem;
+  color: black;
+  height: 18rem;
+  width: 12rem;
+  background-color: aqua;
+}
+/*# sourceMappingURL=movieCard.css.map */

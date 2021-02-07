@@ -1,0 +1,84 @@
+@import "../../sass/abstract/_mixins";
+@import "../abstract/_variables";
+
+.movie-card-container {
+  width: 65%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.movie-content {
+  height: inherit;
+  padding: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .movie-name {
+    color: $darkBlue;
+    height: 4.4rem;
+    width: 100%;
+  }
+
+  .movie-description {
+    font: 1.3em sans-serif;
+  }
+
+  .buttons {
+    width: 100%;
+    .movie-btn {
+      height: 3rem;
+      width: 45%;
+      background-color: $mediumGreen;
+      margin: 0.5rem;
+      border-radius: 1.7rem;
+      border: none;
+      box-shadow: 0.2px 0.8px 0.6px 0.7px rgb(129, 129, 129);
+      outline: none;
+      font-size: 1.3rem;
+      .fas {
+        color: rgb(19, 18, 18);
+      }
+
+      .btn-title {
+        color: $darkBlue;
+        margin-left: 1rem;
+        text-transform: uppercase;
+        transform: translateY(-1px);
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+      &:active {
+        transform: translateY(1px);
+      }
+
+      & .fas:active {
+        color: rgb(255, 255, 0);
+      }
+    }
+  }
+}
+
+.img-wrapper {
+  position: relative;
+  justify-self: center;
+  margin: 2rem;
+  @include flex-column-center;
+  box-shadow: 0rem 0.1rem 0.2rem 0.2rem rgb(51, 51, 51);
+
+  &__poster {
+    margin: 0%;
+    padding: 0%;
+  }
+
+  &__noposter {
+    font-weight: bold;
+    font-size: 3rem;
+    color: black;
+    height: 18rem;
+    width: 12rem;
+    background-color: aqua;
+  }
+}

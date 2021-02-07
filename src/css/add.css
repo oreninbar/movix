@@ -1,0 +1,73 @@
+.add-page {
+  position: relative;
+  width: 100vw;
+  background-image: linear-gradient(123deg, #f1f1f1 50%, #bebebe);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.add-container {
+  position: relative;
+  height: 100%;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.add-container .input-wrapper {
+  margin: 10rem 5rem 3rem 5rem;
+  width: 45%;
+  height: auto;
+}
+
+.add-container .input-wrapper .input-search {
+  color: #f0e5e5;
+  height: auto;
+  font-family: cursive;
+  padding: .4rem 2rem .4rem 2rem;
+  font-size: 2rem;
+  width: 100%;
+  background-color: #142d5e;
+  border-radius: .6rem;
+}
+
+.add-container .movies-list {
+  height: auto;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=add.css.map */

@@ -1,0 +1,51 @@
+@import "../../sass/abstract/_mixins";
+@import "../abstract/_variables";
+
+html {
+  font-size: 10px;
+}
+
+.header-container {
+  height: 7vh;
+  width: 100vw;
+  @include flex-row-center;
+  font-size: 2rem;
+  background-color: $darkBlue;
+  text-transform: uppercase;
+}
+
+.inner-content {
+  height: 100%;
+  width: 50%;
+  color: white;
+  @include flex-row-center;
+  justify-content: flex-start;
+  padding-inline-start: 100px;
+}
+
+.text-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0rem 20rem;
+  height: 100%;
+  width: 50%;
+  @include flex-row-center;
+  justify-content: space-around;
+  text-decoration: none;
+
+  &__add {
+    @include flex-row-center;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    background-color: $mediumGreen;
+  }
+
+  & .text-link:hover{
+    text-decoration: underline;
+  }
+
+}

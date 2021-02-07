@@ -1,0 +1,70 @@
+.watchlist-container {
+  position: relative;
+  height: 93vh;
+  width: 100vw;
+  background-image: linear-gradient(123deg, #f1f1f1 50%, #bebebe);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list-header {
+  font-size: 1.5rem;
+  padding: .5rem .5rem;
+  height: auto;
+  width: 60%;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.list-header__movies-amount {
+  padding: 1rem;
+  border-radius: .7rem;
+  background-color: #142d5e;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4ac24a;
+}
+
+.list-header__title {
+  color: #142d5e;
+  font-weight: 700;
+}
+
+.movies-grid-container {
+  height: 80%;
+  width: 60%;
+  background-color: #80d6f0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[10];
+      grid-template-rows: repeat(10, 1fr);
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
+}
+/*# sourceMappingURL=watched.css.map */
