@@ -1,1 +1,32 @@
-/* No CSS *//*# sourceMappingURL=cardDisplay.css.map */
+.movie-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+.movie-container .buttons-container {
+  top: 20rem;
+}
+
+.movie-container .buttons-container .movie-btn {
+  margin: 0.2rem;
+  font-size: 1rem;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  background-color: #142d5e;
+  color: #4ac24a;
+  cursor: pointer;
+}
+
+.movie-container .buttons-container .movie-btn:active {
+  color: yellow;
+}
+/*# sourceMappingURL=cardDisplay.css.map */

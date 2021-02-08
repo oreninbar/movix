@@ -4,7 +4,6 @@ import "../css/cardDisplay.css";
 
 const CardDisplay = inject("movies_store")(
   observer((props) => {
-
     function remove() {
       console.log(props.page);
       if (props.page === "watched") {
@@ -22,38 +21,38 @@ const CardDisplay = inject("movies_store")(
             <img
               src={`https://image.tmdb.org/t/p/w200${props.movie.poster_path}`}
               alt={`${props.movie.title} Poster`}
-              className={"img-wrapper__poster"}
+              className={"img_poster"}
             />
           ) : (
-            <div className="img-wrapper__noposter">no image</div>
+            <div className="img__noposter">no image</div>
           )}
-          <div className="buttons">
-            <button
-              className="movie-btn add-watchlist"
-              onClick={
-                props.page === "watched"
-                  ? () => {
-                      props.movies_store.addToWatchListt(props.movie);
-                    }
-                  : () => {
-                      props.movies_store.addToWatchedd(props.movie);
-                    }
-              }
-            >
-              <i className="fas fa-star">
-                <span className="btn-title">
-                  {props.page === "watched"
-                    ? "Add to watchlist"
-                    : "Add to Watched"}
-                </span>
-              </i>
-            </button>
-            <button className="movie-btn remove" onClick={remove}>
-              <i className="fas fa-trash-alt">
-                <span className="btn-title">Remove</span>
-              </i>
-            </button>
-          </div>
+        </div>
+        <div className="buttons-container">
+          <button
+            className="movie-btn add-watchlist"
+            onClick={
+              props.page === "watched"
+                ? () => {
+                    props.movies_store.addToWatchListt(props.movie);
+                  }
+                : () => {
+                    props.movies_store.addToWatchedd(props.movie);
+                  }
+            }
+          >
+            <i className="fas fa-star">
+              <span className="btn-title">
+                {props.page === "watched"
+                  ? "Add to watchlist"
+                  : "Add to Watched"}
+              </span>
+            </i>
+          </button>
+          <button className="movie-btn remove" onClick={remove}>
+            <i className="fas fa-trash-alt">
+              <span className="btn-title">Remove</span>
+            </i>
+          </button>
         </div>
       </div>
     );

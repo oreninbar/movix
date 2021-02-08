@@ -21,39 +21,35 @@ export class Movies_stores {
   @action init_watched_arr() {
     let tempArr = JSON.parse(localStorage.getItem("watchedMovies"));
     for (const movie of tempArr) {
-      this.addToWatched(movie)
+      this.addIntoWatched(movie);
     }
   }
 
   @action init_watchList_arr() {
     let tempArr = JSON.parse(localStorage.getItem("watchListMovies"));
     for (const movie of tempArr) {
-      this.addToWatchList(movie)
+      this.addIntoWatchList(movie);
     }
   }
 
-  @action addToWatched(movie) {
+  @action addIntoWatched(movie) {
     this.arrWatched.push(movie);
   }
 
-  @action addToWatchList(movie) {
+  @action addIntoWatchList(movie) {
     this.arrWatchList.push(movie);
   }
 
   @action removeFromWatched(movie) {
-    console.log('enter to remove from watched ');
-    console.log(movie.id);
-    // let temp = this.arrWatched.findIndex(movie);
-    // console.log(temp);
-    // this.arrWatched.splice(temp, 1);
+    console.log("enter to remove from watched ");
+    this.arrWatched.splice(this.arrWatched.indexOf(movie), 1);
+    localStorage.watchedMovies = JSON.stringify(this.arrWatched);
   }
-  
+
   @action removeFromWatchList(movie) {
-    console.log('enter to remove from watchList ');
-    console.log(movie.title);
-    // let temp = this.arrWatched.findIndex(movie);
-    // console.log(temp);
-    // this.arrWatched.splice(temp, 1);
+    console.log("enter to remove from watched ");
+    this.arrWatchList.splice(this.arrWatchList.indexOf(movie), 1);
+    localStorage.watchListMovies = JSON.stringify(this.arrWatchList);
   }
 
   @action addToWatchListt(movie) {

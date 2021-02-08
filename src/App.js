@@ -31,7 +31,7 @@ observer((props) => {
         <Switch>
           <Route path="/" exact render={() => <Watch page={'watchList'}/>} />
           <Route path="/watched" exact render={() => <Watch page={'watched'}/>} />
-          <Route path="/add" exact render={() => <Add />} />
+          <Route path="/add" exact render={() => <Add page={'add'}/>} />
         </Switch>
       </Router>
     );
