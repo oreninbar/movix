@@ -1,6 +1,6 @@
 import { inject, observer } from "mobx-react";
 import React from "react";
-import "../css/movieCard.css";
+import "../css/cardDisplay.css";
 
 const CardDisplay = inject("movies_store")(
   observer((props) => {
@@ -23,7 +23,6 @@ const CardDisplay = inject("movies_store")(
               src={`https://image.tmdb.org/t/p/w200${props.movie.poster_path}`}
               alt={`${props.movie.title} Poster`}
               className={"img-wrapper__poster"}
-              style={{ width: "16rem" }}
             />
           ) : (
             <div className="img-wrapper__noposter">no image</div>

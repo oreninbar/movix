@@ -58,10 +58,10 @@
 
 .movies-grid-container {
   height: 80%;
-  width: 60%;
+  width: 50%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
 }
-/*# sourceMappingURL=watched.css.map */
+/*# sourceMappingURL=watch.css.map */
