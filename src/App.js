@@ -10,22 +10,17 @@ import { observer, inject } from "mobx-react";
 const App = inject("movies_store")(
 observer((props) => {
     useEffect(() => {
-      console.log('enter to useEffect');
       let tempArr1 = JSON.parse(localStorage.getItem("watchListMovies"));
       let tempArr2 = JSON.parse(localStorage.getItem("watchedMovies"));
       if (!tempArr1) {
         localStorage.setItem("watchListMovies", "[]");
       } else {
         props.movies_store.init_watchList_arr();  
-        console.log('----start position watch list');
-        console.log(props.movies_store.arrWatchList.map(c=>c.title));
       }
       if (!tempArr2) {
         localStorage.setItem("watchedMovies", "[]");
       } else {
         props.movies_store.init_watched_arr();
-        console.log('----start position watched');
-        console.log(props.movies_store.arrWatched.map(a=> a.title));
       }
     });
 

@@ -39,8 +39,7 @@
 .movies-grid-container{
     height: 80%;
     width: 60%;
-    background-color: rgb(128, 214, 240);
     display: grid;
-    grid-template-rows: repeat(10, 1fr);
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
+

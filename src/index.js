@@ -7,7 +7,6 @@ import { Provider } from "mobx-react";
 import { Movies_stores } from "./stores/moviesListsStore";
 
 let movies_store = new Movies_stores();
-console.log(movies_store);
 let stores = { movies_store };
 
 ReactDOM.render(

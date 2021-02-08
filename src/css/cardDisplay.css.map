@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/componenets/cardDisplay.scss",
+        "../sass/abstract/_mixins.scss",
+        "../sass/abstract/_variables.scss"
+    ],
+    "names": [],
+    "file": "cardDisplay.css"
+}

@@ -59,12 +59,9 @@
 .movies-grid-container {
   height: 80%;
   width: 60%;
-  background-color: #80d6f0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[10];
-      grid-template-rows: repeat(10, 1fr);
-  -ms-grid-columns: (1fr)[10];
-      grid-template-columns: repeat(10, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
 }
 /*# sourceMappingURL=watched.css.map */
